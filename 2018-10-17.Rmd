@@ -28,4 +28,18 @@ filmVotingData <- read_csv("https://raw.githubusercontent.com/tpemartin/course-1
 library(readr)
 bankdata <- read_csv("https://raw.githubusercontent.com/tpemartin/github-data/master/bankdata.csv")
 ```
+```{r}
+
+library(googlesheets)
+gs_auth(new_user = TRUE)
+```
+
+```{r}
+
+```
+
+```{r}
+gsSurvey<-gs_key("1mC9bnxj11NCNoOCw0Vmn4nxERbHtLjeGo9v9C9b2GDE")  #download sheet information as an object
+classSurvey<-gs_read(gsSurvey,ws=1) #access the 1st worksheet
+```
 
